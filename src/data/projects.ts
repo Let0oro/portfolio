@@ -46,13 +46,13 @@ export const projectsData: Project[] = [
         image: "https://placehold.co/400x600/08070A/4C6A4F?text=Space+Pixels",
         codeLink: "https://github.com/Let0oro/space-pixels",
         liveLink: "https://space-pixels.vercel.app",
-        gallery: [
-            { type: 'image', url: "https://placehold.co/1280x720/08070A/4C6A4F?text=Space+Pixels+1" },
-            { type: 'video', url: sampleVideo },
-            { type: 'image', url: "https://placehold.co/1280x720/18171A/5C7A5F?text=Space+Pixels+2" },
-            { type: 'image', url: "https://placehold.co/1280x720/28272A/6C8A6F?text=Space+Pixels+3" },
-            { type: 'image', url: "https://placehold.co/1280x720/000000/3C5A3F?text=Space+Pixels+4" }
-        ]
+        // gallery: [
+        //     { type: 'image', url: "https://placehold.co/1280x720/08070A/4C6A4F?text=Space+Pixels+1" },
+        //     { type: 'video', url: sampleVideo },
+        //     { type: 'image', url: "https://placehold.co/1280x720/18171A/5C7A5F?text=Space+Pixels+2" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/28272A/6C8A6F?text=Space+Pixels+3" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/000000/3C5A3F?text=Space+Pixels+4" }
+        // ]
     },
     {
         id: "mind-breakers",
@@ -65,13 +65,13 @@ export const projectsData: Project[] = [
         image: "https://placehold.co/400x600/B3393A/F3E6D4?text=Mind+Breakers",
         codeLink: "https://github.com/Let0oro/mind-breakers",
         liveLink: "https://mind-breakers.vercel.app",
-        gallery: [
-            { type: 'image', url: "https://placehold.co/1280x720/B3393A/F3E6D4?text=Mind+Breakers+1" },
-            { type: 'image', url: "https://placehold.co/1280x720/A3292A/E3D6C4?text=Mind+Breakers+2" },
-            { type: 'image', url: "https://placehold.co/1280x720/93191A/C3B6A4?text=Mind+Breakers+3" },
-            { type: 'image', url: "https://placehold.co/1280x720/C3494A/FFF6E4?text=Mind+Breakers+4" },
-            { type: 'image', url: "https://placehold.co/1280x720/83090A/B3A694?text=Mind+Breakers+5" }
-        ]
+        // gallery: [
+        //     { type: 'image', url: "https://placehold.co/1280x720/B3393A/F3E6D4?text=Mind+Breakers+1" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/A3292A/E3D6C4?text=Mind+Breakers+2" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/93191A/C3B6A4?text=Mind+Breakers+3" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/C3494A/FFF6E4?text=Mind+Breakers+4" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/83090A/B3A694?text=Mind+Breakers+5" }
+        // ]
     },
     {
         id: "book-mng",
@@ -82,13 +82,13 @@ export const projectsData: Project[] = [
             en: "Cross-platform app for reading tracking. Uses an encrypted local SQLite DB with cloud sync via Turso and local sync with other devices through server listening via TCP protocol programmed in Rust. Optimized 3NF architecture with no N+1 query issues and an ultra-minimalist design with inline editing."
         },
         image: "https://placehold.co/400x600/08070A/D1B47A?text=Book-Mng",
-        gallery: [
-            { type: 'image', url: "https://placehold.co/1280x720/08070A/D1B47A?text=Book-Mng+Main" },
-            { type: 'video', url: sampleVideo },
-            { type: 'image', url: "https://placehold.co/1280x720/18171A/E1C48A?text=Book-Mng+Stats" },
-            { type: 'image', url: "https://placehold.co/1280x720/28272A/F1D49A?text=Book-Mng+Logs" },
-            { type: 'image', url: "https://placehold.co/1280x720/000000/C1A46A?text=Book-Mng+Settings" }
-        ],
+        // gallery: [
+        //     { type: 'image', url: "https://placehold.co/1280x720/08070A/D1B47A?text=Book-Mng+Main" },
+        //     { type: 'video', url: sampleVideo },
+        //     { type: 'image', url: "https://placehold.co/1280x720/18171A/E1C48A?text=Book-Mng+Stats" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/28272A/F1D49A?text=Book-Mng+Logs" },
+        //     { type: 'image', url: "https://placehold.co/1280x720/000000/C1A46A?text=Book-Mng+Settings" }
+        // ],
         commingSoon: true
     },
     {
@@ -100,9 +100,9 @@ export const projectsData: Project[] = [
             en: "Open Source platform aimed at students and researchers for file management. Integrates a powerful OCR engine in Rust (programmed with ort crate and ONNX models), a learning model inspired by the Feynman technique, and a Markdown editor with interactive outline support."
         },
         image: "https://placehold.co/400x600/2A1414/4C6A4F?text=Infinite+Study",
-        gallery: [
-            { type: 'image', url: "https://placehold.co/1280x720/1A0404/3C5A3F?text=Infinite+Study+Graph" }
-        ],
+        // gallery: [
+        //     { type: 'image', url: "https://placehold.co/1280x720/1A0404/3C5A3F?text=Infinite+Study+Graph" }
+        // ],
         commingSoon: true
     }
 ];
