@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { title, description = "Developer Portfolio" } = Astro.props;
+const canonicalUrl = Astro.url.href;
 import { getLangFromUrl } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 ---
@@ -30,6 +31,18 @@ const lang = getLangFromUrl(Astro.url);
       href={`${import.meta.env.BASE_URL}logo.png`}
     />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
 
     <!-- Google Fonts: Cormorant Garamond & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
