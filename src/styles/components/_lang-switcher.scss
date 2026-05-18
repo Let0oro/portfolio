@@ -3,14 +3,15 @@
     gap: 0.5rem;
     align-items: center;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-top: 1rem;
-    color: var(--clr-ink);
+    justify-content: center;
 
     a {
-        color: var(--clr-ink);
+        color: var(--clr-bg);
+        filter: drop-shadow(1px 1px .5px var(--clr-red)) drop-shadow(0 0 .5px var(--clr-red));
         text-decoration: none;
         opacity: 0.5;
         transition: opacity 0.3s ease;
@@ -26,6 +27,23 @@
     }
 
     .sep {
-        opacity: 0.3;
+        opacity: 0.8;
+        color: var(--clr-bg);
+        filter: drop-shadow(1px 1px .5px var(--clr-red)) drop-shadow(0 0 .5px var(--clr-red));
+    }
+
+
+
+    @media (max-width: 800px) {
+        justify-content: none;
+
+        font-size: 0.7rem;
+
+
+        a, .sep {
+            color: var(--clr-ink);
+            filter: none;
+        }
+
     }
 }

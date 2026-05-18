@@ -138,7 +138,8 @@ pre {
 .section-divider {
     // display: block;
     background-repeat: no-repeat;
-    width: 45%;
+    min-width: 45%;
+    max-width: 550px;
     height: 270px;
     background-position: center;
     background-image: url('/images/engraving-divider.svg');

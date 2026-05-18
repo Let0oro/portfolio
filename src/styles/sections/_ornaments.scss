@@ -24,7 +24,7 @@
         gap: 0.5rem;
         padding: 0.6rem 0;
         text-decoration: none;
-        color: var(--clr-ink);
+        color: var(--clr-bg);
         transition: all 0.3s ease;
         position: relative;
         font-weight: 600;
@@ -55,10 +55,11 @@
         }
 
         &.active {
-            color: var(--clr-red);
+            color: var(--clr-bg);
+            filter: drop-shadow(1px 1px .5px var(--clr-red)) drop-shadow(0 0 .5px var(--clr-red));
 
             .editorial-nav__num {
-                color: var(--clr-red);
+                color: var(--clr-bg);
             }
 
             &::after {
@@ -73,8 +74,7 @@
         letter-spacing: 0.05em;
         opacity: 0.8;
         min-width: 1.2rem;
-        filter: drop-shadow(0 0 1px var(--clr-bg));
-        color: var(--clr-ink);
+        color: var(--clr-bg);
 
     }
 
@@ -110,10 +110,17 @@
 
         &__link {
             padding: 0.4rem 0;
+            color: var(--clr-ink);
+
+            &.active {
+                color: var(--clr-red);
+                filter: none;
+            }
         }
 
         &__num {
             display: none;
+            color: var(--clr-ink);
         }
 
         &__text {
