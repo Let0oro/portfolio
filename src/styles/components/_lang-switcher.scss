@@ -8,6 +8,7 @@
     letter-spacing: 0.05em;
     margin-top: 1rem;
     justify-content: center;
+    color: var(--clr-bg);
 
     a {
         color: var(--clr-bg);
@@ -19,6 +20,7 @@
         &:hover,
         &.active {
             opacity: 1;
+            color: var(--clr-bg);
         }
 
         &.active {
@@ -35,14 +37,22 @@
 
 
     @media (max-width: 800px) {
+        color: var(--clr-ink);
         justify-content: none;
-
         font-size: 0.7rem;
 
 
         a, .sep {
-            color: var(--clr-ink);
             filter: none;
+            color: var(--clr-ink);
+
+            &:hover {
+                color: var(--clr-ink);
+            }
+
+            &.active {
+                color: var(--clr-ink);
+            }
         }
 
     }
