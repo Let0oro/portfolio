@@ -36,7 +36,7 @@
 
     &__subtitle {
         font-family: var(--ff-mono);
-        font-size: 0.65rem;
+        font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.2em;
         color: var(--clr-ink-soft);
@@ -121,7 +121,7 @@
         padding: 1.2rem 0 0;
 
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             color: var(--clr-ink);
             font-weight: 400;
             text-transform: uppercase;
@@ -131,7 +131,7 @@
         .stack {
             color: var(--clr-red);
             font-family: var(--ff-mono);
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             margin-bottom: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.08em;
@@ -140,7 +140,7 @@
         }
 
         .desc {
-            font-size: 0.95rem;
+            font-size: 1.1rem;
             margin-bottom: 1.2rem;
             text-align: justify;
             flex: 1;

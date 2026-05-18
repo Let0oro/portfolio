@@ -57,11 +57,14 @@ const t = useTranslations(lang);
       <a href="https://www.linkedin.com/in/juanmmontero/" target="_blank"
         >LinkedIn →</a
       >
+      <a download id="cv" href="/data/cv_jmb.pdf" target="_blank">CV →</a>
     </div>
   </div>
 </section>
 
 <script>
+  import type { AnchorHTMLAttributes } from "react";
+
   document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById(
       "name",
@@ -90,5 +93,11 @@ const t = useTranslations(lang);
 
     nameInput?.addEventListener("input", updateEmailLink);
     messageInput?.addEventListener("input", updateEmailLink);
+
+    const cv_link = document.getElementById("cv") as HTMLAnchorElement | null;
+    if (cv_link)
+      cv_link.href = document.location.pathname.includes("en")
+        ? "/data/cv_jmb_en.pdf"
+        : "/data/cv_jmb.pdf";
   });
 </script>
