@@ -3,6 +3,7 @@ import "../styles/sections/_contact.scss";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const cvHref = `${import.meta.env.BASE_URL}data/${lang === "en" ? "cv_jmb_en.pdf" : "cv_jmb.pdf"}`;
 ---
 
 <section id="contact" class="contact-section">
@@ -57,7 +58,7 @@ const t = useTranslations(lang);
       <a href="https://www.linkedin.com/in/juanmmontero/" target="_blank"
         >LinkedIn →</a
       >
-      <a download="Juan_Manuel_Montero_CV.pdf" id="cv" href="/data/cv_jmb.pdf">CV →</a>
+      <a download="Juan_Manuel_Montero_CV.pdf" id="cv" href={cvHref}>CV →</a>
     </div>
   </div>
 </section>
@@ -93,11 +94,5 @@ const t = useTranslations(lang);
 
     nameInput?.addEventListener("input", updateEmailLink);
     messageInput?.addEventListener("input", updateEmailLink);
-
-    const cv_link = document.getElementById("cv") as HTMLAnchorElement | null;
-    if (cv_link)
-      cv_link.href = document.location.pathname.includes("en")
-        ? "/data/cv_jmb_en.pdf"
-        : "/data/cv_jmb.pdf";
   });
 </script>
